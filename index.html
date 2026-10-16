@@ -75,7 +75,15 @@
         /* WAVE */
         .wave-section { padding: 2.5rem 1.5rem; text-align: center; background: #fff; }
         .wave-section h2 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; color: #888; text-transform:uppercase; letter-spacing:1px; }
-        .wave-section p { font-size: 0.85rem; color: #aaa; max-width: 440px; margin: 0 auto 8px auto; line-height: 1.6; }
+        .wave-section p { font-size: 0.85rem; color: #777; max-width: 440px; margin: 0 auto 8px auto; line-height: 1.6; }
+        .wave-details { max-width: 440px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px; text-align: left; }
+        .wave-details summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; list-style: none; cursor: pointer; font-size: 1rem; font-weight: 700; color: var(--dark); }
+        .wave-details summary::-webkit-details-marker { display: none; }
+        .wave-details summary::after { content: '+'; color: var(--coral); font-size: 1.35rem; font-weight: 400; line-height: 1; }
+        .wave-details[open] summary::after { content: '−'; }
+        .wave-details summary:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+        .wave-details .wave-content { padding: 0 20px 16px; }
+        .wave-details .wave-content p { text-align: left; }
 
         /* FUNNEL */
         .funnel-section { padding: 2.5rem 1.5rem; text-align: center; }
@@ -310,11 +318,15 @@
     <div class="revenge-sub">60+ breakup gift baskets on Etsy.<br>Revenge candles, "ex" dart boards on Amazon.<br>But nobody owns the category yet.</div>
 </section>
 
-<!-- CREATOR WAVE -->
+<!-- SALES -->
 <section class="wave-section">
-    <h2>The Creator-Entrepreneur Wave</h2>
-    <p>People with a digital footprint have an unfair advantage: the ease of selling what they're already known for.</p>
-    <p>Emotional intelligence. Being a good friend. The kind of energy people want to buy into.</p>
+    <details class="wave-details">
+        <summary>How It Sells</summary>
+        <div class="wave-content">
+            <p>People with a digital footprint have an unfair advantage: the ease of selling what they're already known for.</p>
+            <p>Emotional intelligence. Being a good friend. The kind of energy people want to buy into.</p>
+        </div>
+    </details>
 </section>
 
 <!-- FUNNEL -->
@@ -333,11 +345,6 @@
 <section class="founder-section">
     <h2>Meet the Founder</h2>
     <p>Danaya built WANKER to prove one thing: any situation in life can become an opportunity if you find the right angle.</p>
-    <p>One breakup became this.</p>
-    <p>A product so ridiculous it makes you laugh mid-cry and somehow, that's exactly what you needed.</p>
-    <p>Because here's the thing: your pain is fuel. Toxic, premium, high-octane fuel.</p>
-    <p>The best revenge was never going back. It was building something so undeniably good that going back stops even being a thought.</p>
-    <p>Don't give your ex the satisfaction of your stagnation. Give them the view of you prospering.</p>
     <a class="ig-link" href="https://www.instagram.com/danaya_papaya?igsh=MXVnd2FnaW5xOGQzdg%3D%3D&utm_source=qr" target="_blank">📸 @danaya_papaya</a>
 </section>
 
