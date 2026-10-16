@@ -23,6 +23,7 @@
         /* PRODUCT */
         .product-section { padding: 2rem 1.5rem; text-align: center; }
         .product-img { max-width: 340px; width: 100%; aspect-ratio: 500 / 1086; object-fit: cover; object-position: 76% center; border-radius: 16px; margin: 0 auto; display: block; }
+        @media (max-width: 600px) { .product-img { width: min(100%, 32svh); } }
         .trophy-line { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-top: 24px; line-height: 1.3; }
         .trophy-sub { font-size: 0.95rem; color: var(--gray); margin-top: 8px; }
 
@@ -210,9 +211,9 @@
 
 <!-- INNER VOICE -->
 <section class="voice-section">
-    <p>For your friend - or yourself - who needs a reminder.</p>
+    <p>For your friend - or yourself -<br>who needs a reminder.</p>
     <p>If you broke up,<br>there was a <span class="accent">good reason.</span></p>
-    <p>This is the <span class="accent">physical reminder</span><br>you keep on your shelf so you never forget it.</p>
+    <p>This is the <span class="accent">physical reminder</span><br>you keep on your shelf<br>so you never forget it.</p>
     <p class="small">Sometimes winning the game is folding. 🃏</p>
 </section>
 
