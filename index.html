@@ -57,6 +57,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, sys
   .wrap { width: min(100% - 36px, 1080px); }
   .product-stage img { width: min(78vw, 290px); height: 44svh; }
 }
+@media (max-width: 480px) {
+  .hero-grid { gap: 8px; padding: 34px 0 56px; }
+  .hero h1 { margin: 14px 0 17px; }
+  .hero .lead { max-width: 31ch; line-height: 1.42; }
+  .subline { max-width: 34ch; line-height: 1.5; margin-bottom: 18px; }
+  .cta { min-height: 50px; min-width: 178px; }
+  .launch-note { margin-top: 12px; }
+  .product-stage { margin-top: 6px; }
+  .product-stage img { width: min(80vw, 300px); height: min(41svh, 380px); }
+  .product-stage figcaption { max-width: 34ch; font-size: .8rem; line-height: 1.45; margin-top: 5px; }
+  .section { padding: 72px 0; }
+  .section h2 { font-size: clamp(2.25rem, 9.5vw, 3.2rem); }
+  .card { padding: 30px 28px; }
+  .reminder p { font-size: clamp(1.22rem, 5.3vw, 1.5rem); }
+  .waitlist-form input[type=email], .waitlist-form button { min-height: 52px; }
+}
 </style></head><body>
 <header class="nav"><div class="wrap"><a class="brand" href="/" aria-label="WANKER home">WANKER</a><a class="nav-link" href="/investors/">Investor brief ↗</a></div></header>
 <main>
