@@ -33,12 +33,12 @@ button, input { font: inherit; }
 a { color: inherit; }
 .wrap { width: min(100% - 48px, 1080px); margin-inline: auto; }
 .nav { position: relative; z-index: 2; border-bottom: 1px solid var(--line); background: var(--cream); }
-.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 0; }
+.nav .wrap { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px 0; }
 .brand { flex: 0 0 auto; font-size: 1.5rem; font-weight: 900; letter-spacing: -.055em; text-decoration: none; line-height: 1; }
 .nav-actions { display: flex; align-items: center; justify-content: center; gap: 22px; }
 .nav-link { font-size: var(--small); font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
 .hero { background: var(--cream); }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, .85fr); align-items: center; gap: clamp(40px, 7vw, 96px); padding: clamp(64px, 8vw, 96px) 0; }
+.hero-grid { display: grid; grid-template-columns: 1fr; justify-items: center; gap: 18px; padding: clamp(48px, 6vw, 72px) 0; }
 .hero-copy { max-width: 520px; margin-inline: auto; text-align: center; }
 .eyebrow, .chip { color: var(--orange); font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .hero h1 { max-width: 12ch; margin: 18px auto 24px; font-size: clamp(3rem, 6.2vw, 5rem); line-height: 1.02; letter-spacing: -.055em; text-wrap: balance; }
@@ -49,12 +49,12 @@ a { color: inherit; }
 .launch-note { margin: 14px 0 0; color: var(--muted); font-size: var(--small); }
 .product-stage { min-width: 0; margin: 0; text-align: center; }
 .product-stage figure { margin: 0; }
-.product-stage img { display: block; width: min(100%, 360px); height: 540px; margin: 0 auto; object-fit: contain; object-position: center; }
+.product-stage img { display: block; width: min(100%, 360px); height: 440px; margin: 0 auto; object-fit: contain; object-position: center; }
 .product-stage figcaption { max-width: 38ch; margin: 14px auto 0; color: var(--muted); font-size: var(--small); line-height: 1.5; }
 .section { padding: clamp(76px, 9vw, 124px) 0; text-align: center; }
 .section h2 { max-width: 20ch; margin: 16px auto 26px; font-size: var(--h2); line-height: 1.08; letter-spacing: -.05em; text-wrap: balance; }
 .section p { max-width: 58ch; margin: 0 auto 1em; line-height: 1.62; }
-.two { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(32px, 6vw, 80px); }
+.two { display: grid; grid-template-columns: 1fr; align-items: center; gap: clamp(28px, 4vw, 44px); max-width: 760px; margin-inline: auto; }
 .statement { max-width: 38ch !important; font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.45 !important; font-weight: 600; letter-spacing: -.025em; }
 .muted { color: var(--muted); }
 .card { max-width: 520px; margin: 0 auto; padding: clamp(30px, 4vw, 48px); border: 1px solid var(--line); border-radius: 22px; background: var(--cream); }
@@ -89,10 +89,10 @@ a { color: inherit; }
 .footer a { color: inherit; }
 @media (max-width: 750px) {
   .wrap { width: min(100% - 40px, 1080px); }
-  .nav .wrap { padding: 16px 0; }
+  .nav .wrap { gap: 12px; padding: 16px 0; }
   .nav-actions { gap: 14px; }
   .nav-link { font-size: .8rem; }
-  .hero-grid { grid-template-columns: 1fr; gap: 20px; padding: 48px 0 58px; }
+  .hero-grid { gap: 14px; padding: 42px 0 48px; }
   .hero-copy { max-width: 560px; }
   .hero h1 { margin: 15px auto 20px; }
   .product-stage { margin-top: 4px; }
